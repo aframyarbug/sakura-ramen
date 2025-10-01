@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  /*   lässt die seite beim klick auf den link  sanft scrollen    */
 }
 
 body {
@@ -8,6 +9,669 @@ body {
   border: 0;
 }
 
-.background {
+.background_img {
   height: 100vh;
+  background-image: url("img/hero_bg.jpg");
+  background-size: cover;
+  /* zeigt das bild über die ganze seite nicht gekachelt */
+  background-position: center;
+  object-fit: cover;
+}
+
+.navbar_total {
+  display: flex;
+  height: 112px;
+  justify-content: space-between;
+}
+
+.sakura_logo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-left: 160px;
+}
+
+.sakura_logo_size {
+  display: flex;
+  width: 64px;
+  height: 64px;
+}
+
+.navbar_phone {
+  display: flex;
+  gap: 50px;
+}
+
+.navbar {
+  display: flex;
+  padding-top: 45px;
+  align-items: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  gap: 50px;
+}
+
+.phone {
+  display: flex;
+  padding-top: 45px;
+  align-items: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  white-space: nowrap;
+  padding-right: 160px;
+}
+
+.tel_number_look {
+  display: flex;
+  background-color: #9f0908;
+  border: 3px;
+  border-style: solid;
+  border-radius: 0.5em;
+  padding-top: 0.3em;
+  padding-bottom: 0.5em;
+  padding-left: 0.8em;
+  padding-right: 0.6em;
+  align-items: flex-end;
+  text-decoration: none;
+  color: white;
+}
+
+.tel_number_look:hover {
+  background-color: #5f0505;
+}
+
+.phone_logo {
+  display: flex;
+  padding-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.headline {
+  padding-top: 164px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.headline_under {
+  font-size: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.navbar_links_look {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar_links_look:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  color: #9f0908;
+  padding-top: 120px;
+  padding-bottom: 64px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.picks {
+  font-family: "Economica", sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-bottom: 120px;
+}
+
+span {
+  text-align: center;
+}
+
+.how {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how_to_order_logos {
+  width: 128px;
+  padding-bottom: 16px;
+}
+
+.menu {
+  background-image: url("img/section_our_menu_bg.jpg");
+}
+
+.our_dishes {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu_pic {
+  display: flex;
+  height: 352px;
+  width: 352px;
+}
+
+.ramen1 {
+  display: flex;
+  padding-left: 160px;
+  align-items: center;
+  padding-bottom: 56px;
+}
+
+.ramen2 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-right: 160px;
+  padding-bottom: 56px;
+}
+
+.ramen3 {
+  display: flex;
+  padding-left: 160px;
+  align-items: center;
+  padding-bottom: 120px;
+}
+
+.ramen2_img {
+  padding-left: 160px;
+}
+
+.meal_price {
+  font-family: "Raleway", sans-serif;
+  align-items: center;
+  font-weight: bold;
+  font-size: 32px;
+  color: #675e54;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Economica", sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+  color: black;
+  padding-top: 0;
+
+  padding-bottom: 16px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.table {
+  display: flex;
+  width: auto;
+}
+
+td {
+  padding: 0;
+  padding-bottom: 8px;
+  width: auto;
+}
+
+.ramen3_table {
+  width: 300px;
+}
+
+.h2_find_us_at {
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  width: 100%;
+  height: 50vh;
+  border: 0;
+}
+
+footer {
+  background-color: #0a141e;
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.street_name {
+  display: flex;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  align-items: center;
+  padding-bottom: 64px;
+}
+
+.p_street_name {
+  margin: 0;
+}
+
+.map_marker {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.sakuralogo {
+  display: flex;
+  padding-left: 160px;
+  align-items: center;
+}
+
+.all_media_logos {
+  display: flex;
+  padding-right: 160px;
+  align-items: center;
+  gap: 16px;
+}
+
+.sakuralogo_size {
+  height: 44px;
+}
+
+.tripadvisor_logo,
+.facebook_logo,
+.instagrram_logo {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 1280px) {
+  .navbar_total {
+    display: flex;
+    height: 112px;
+    justify-content: space-between;
+  }
+
+  .sakura_logo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-left: 24px;
+  }
+
+  .sakura_logo_size {
+    display: flex;
+    width: 64px;
+    height: 64px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .phone {
+    display: flex;
+    padding-top: 45px;
+    align-items: center;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    white-space: nowrap;
+    padding-right: 24px;
+  }
+
+  h1 {
+    font-size: 72px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .headline_under {
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 64px;
+    padding-top: 96px;
+    padding-bottom: 48px;
+  }
+
+  .how_to_order_logos {
+    width: 112px;
+    padding-bottom: 8px;
+  }
+
+  .picks {
+    font-family: "Economica", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 96px;
+  }
+
+  .meal_price {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .ramen1 {
+    display: flex;
+    padding-left: 0px;
+    align-items: center;
+    padding-left: 24px;
+    padding-bottom: 32px;
+  }
+
+  .ramen2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 0px;
+    white-space: nowrap;
+    padding-right: 24px;
+    padding-bottom: 32px;
+  }
+
+  .ramen2_img {
+    padding-left: 0px;
+  }
+
+  .ramen3 {
+    display: flex;
+    padding-left: 0px;
+    align-items: center;
+    padding-left: 24px;
+    padding-bottom: 96px;
+  }
+
+  h3 {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Economica", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: black;
+  }
+
+  .ramen3_table {
+    width: 200px;
+  }
+
+  td {
+    padding: 0;
+    font-size: 24px;
+  }
+
+  .street_name {
+    font-size: 20px;
+    padding-bottom: 48px;
+  }
+
+  .sakuralogo {
+    display: flex;
+    padding-left: 24px;
+    align-items: center;
+  }
+
+  .all_media_logos {
+    display: flex;
+    padding-right: 24px;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar_total {
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+  }
+
+  .sakura_logo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding-left: 16px;
+  }
+
+  .sakura_logo_size {
+    display: flex;
+    width: 40px;
+    height: 40px;
+  }
+
+  .phone {
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    padding-right: 16px;
+  }
+
+  .tel_number_look {
+    display: flex;
+    background-color: #9f0908;
+    border: 3px;
+    border-style: solid;
+    border-radius: 0.5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: flex-end;
+    text-decoration: none;
+    color: white;
+  }
+
+  .phone_logo {
+    display: flex;
+    padding-right: 5px;
+    width: 16px;
+    height: 16px;
+  }
+
+  h1 {
+    font-size: 38px;
+    text-align: center;
+
+    white-space: nowrap;
+  }
+
+  .headline_under {
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 38px;
+    padding-top: 72px;
+    padding-bottom: 40px;
+  }
+
+  .picks {
+    font-family: "Economica", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 72px;
+    flex-direction: column;
+  }
+
+  .how_to_order_logos {
+    width: 112px;
+    padding-bottom: 8px;
+  }
+
+  .how {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+  }
+
+  .how3 {
+    padding-bottom: 0;
+  }
+
+  h3 {
+    display: flex;
+    justify-content: flex-start;
+    font-family: "Economica", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: black;
+    padding-top: 16px;
+    padding-bottom: 8px;
+    white-space: nowrop;
+  }
+
+  .h3_class {
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 0;
+    font-size: 24px;
+    white-space: nowrop;
+  }
+
+  .meal_price {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .ramen3_table {
+    padding-top: 24px;
+    width: 180px;
+  }
+
+  .menu_pic {
+    display: flex;
+    height: 280px;
+    width: 280px;
+  }
+
+  .ramen1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+    flex-direction: column;
+  }
+
+  .ramen2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+  }
+
+  .ramen3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 72px;
+    flex-direction: column;
+  }
+
+  .map_marker {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .street_name {
+    font-size: 16px;
+    padding-bottom: 40px;
+  }
+
+  footer {
+    height: 86px;
+  }
+
+  .sakuralogo {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 20px;
+  }
+
+  .sakuralogo_size {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: 0;
+  }
+
+  .tripadvisor_logo,
+  .facebook_logo,
+  .instagrram_logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  .all_media_logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 16px;
+    height: 86px;
+    gap: 8px;
+  }
+
+  .all_logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
